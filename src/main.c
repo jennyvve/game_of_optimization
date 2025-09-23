@@ -131,7 +131,7 @@ void toggle_cell_value(segment_t* const buf, const uint32_t x,
 
 void print_world(uint32_t x, uint32_t y) {
     char buf[SCREEN_SIZE * (SIZE_SEGMENT + 1) +
-             1];  // newline char, and cursor pos.
+             7];  // newline char, and cursor pos (6 bytes).
     char* ptr = buf;
 
     ptr += sprintf(ptr, "\033[1;1H");  // cursor pos 1,1
