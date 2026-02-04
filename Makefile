@@ -1,5 +1,5 @@
 # tested with: g++-11
-CC 		= gcc-14
+CC 		= gcc
 CFLAGS  = -mavx2 -O5
 SRC 	= src
 TARGET 	= life.bin
